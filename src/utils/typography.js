@@ -6,9 +6,9 @@ const typography = new Typography({
   googleFonts: [
     {
       name: 'Montserrat',
-      styles: ['400'],
+      styles: ['200'],
     },{
-        name: 'Pacifico',
+        name: 'Permanent Marker',
         styles: ['400'],
     },{
         name: 'Rock Salt',
@@ -19,7 +19,7 @@ const typography = new Typography({
     }
   ],
   headerFontFamily: [
-    "Quattrocento Sans",
+    "Permanent Marker",
     "Helvetica Neue",
     "Segoe UI",
     "Helvetica",
