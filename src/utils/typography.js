@@ -30,10 +30,10 @@ const typography = new Typography({
   overrideStyles: () => ({
       a: {
           textDecoration: 'none',
-          color: '#007c61'
+          color: 'white'
       },
       'a:hover': {
-        color: '#0adbd7',
+        textDecoration: 'underline',
       },
       'h3': {
           fontFamily: "Rock Salt, serif",
