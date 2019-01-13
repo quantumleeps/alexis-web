@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import Responsive from "react-responsive";
 import { Link } from "gatsby";
 import Hamburger from "../pages/img/hamburger-white.svg";
+import HamburgerNav from "./Hamburger";
 
-const Desktop = props => <Responsive {...props} minWidth={769} />;
-const Mobile = props => <Responsive {...props} maxWidth={767} />;
+const Desktop = props => <Responsive {...props} minWidth={767} />;
+const Mobile = props => <Responsive {...props} maxWidth={766} />;
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -12,23 +13,28 @@ const ListLink = props => (
   </li>
 );
 
+
 class Layout extends Component {
   render() {
     const isHome = this.props.location === "/";
-    // const homeStyleBackground = { backgroundColor: "red" };
-    // const awayStyleBackground = { backgroundColor: "green" };
 
     return (
-      <div
+      <span>
+        <div
         style={
           isHome
             ? {
-                backgroundImage: `url(${this.props.backgroundUrl})`,
+              width: '100%',
+              position: 'absolute',
+              left: '0',
+              top: '0',  
+              zIndex: '0',
+              backgroundImage: `url(${this.props.backgroundUrl})`,
                 minHeight: "100vh",
                 backgroundSize: "cover",
                 backgroundPosition: "50% 50%"
               }
-            : { backgroundColor: "grey", minHeight: "100vh" }
+            : { backgroundColor: "rgb(139, 139, 139)", minHeight: "100vh", minWidth: '100%' }
         }
       >
         <div
@@ -36,12 +42,7 @@ class Layout extends Component {
         >
           <header style={{ marginBottom: `1.5rem` }}>
             <Mobile>
-              <img
-                style={{ float: "right" }}
-                src={Hamburger}
-                height={32}
-                width={32}
-              />
+              <HamburgerNav />
             </Mobile>
             <Link
               to="/"
@@ -54,7 +55,7 @@ class Layout extends Component {
                 <ListLink to="/about/">About me</ListLink>
                 <ListLink to="/resume">Resume</ListLink>
                 <ListLink to="/gallery">Gallery</ListLink>
-                <ListLink to="/reel">Reel</ListLink>
+                <ListLink to="/clips">Clips</ListLink>
                 <ListLink to="/contact/">Contact</ListLink>
               </ul>
             </Desktop>
@@ -62,6 +63,9 @@ class Layout extends Component {
           {isHome ? null : this.props.children}
         </div>
       </div>
+      </span>
+
+      
     );
   }
 }
