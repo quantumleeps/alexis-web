@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Responsive from "react-responsive";
 import { Link } from "gatsby";
-import HamburgerNav from "./Hamburger";
+import HamburgerNav from "./hamburger";
 
 const Desktop = props => <Responsive {...props} minWidth={767} />;
 const Mobile = props => <Responsive {...props} maxWidth={766} />;

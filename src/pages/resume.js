@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import Resume from "./docs/Field Res OCT_2018.pdf"
 
 export default () => (
