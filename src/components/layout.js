@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Responsive from "react-responsive";
 import { Link } from "gatsby";
-import Hamburger from "../pages/img/hamburger-white.svg";
 import HamburgerNav from "./Hamburger";
 
 const Desktop = props => <Responsive {...props} minWidth={767} />;
