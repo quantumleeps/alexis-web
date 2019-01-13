@@ -1,7 +1,7 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: "20px",
+  baseFontSize: "22px",
   baseLineHeight: 1.666,
   googleFonts: [
     {
@@ -15,8 +15,14 @@ const typography = new Typography({
         styles: ['400'],
     },{
         name: 'Quattrocento Sans',
-        styles: ['700'],
-    }
+        styles: ['400'],
+    },{
+        name: 'Muli',
+        styles: ['200'],
+    },{
+      name: 'Thasadith',
+      styles: ['100'],
+  }
   ],
   headerFontFamily: [
     "Permanent Marker",
@@ -26,7 +32,7 @@ const typography = new Typography({
     "Arial",
     "sans-serif",
   ],
-  bodyFontFamily: ["Montserrat", "serif"],
+  bodyFontFamily: ["Muli", "serif"],
   overrideStyles: () => ({
       a: {
           textDecoration: 'none',
