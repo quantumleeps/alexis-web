@@ -1,5 +1,5 @@
 import React from "react";
-import "./hamburger.css";
+import "./Hamburger.css";
 import { Link } from "gatsby";
 
 export default () => (
