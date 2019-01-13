@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import BackgroundImage from "./img/alexis.jpg"
 
 export default () => (
-  <Layout image={BackgroundImage}>
+  <Layout location="/" backgroundUrl={BackgroundImage}>
       &nbsp;
   </Layout>
 )
