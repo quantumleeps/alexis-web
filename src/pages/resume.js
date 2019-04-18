@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Resume from "./docs/Field Res OCT_2018.pdf"
+import Resume from "./docs/Field Res Spring 2019.pdf"
 
 export default () => (
   <Layout location="resume">
