@@ -56,7 +56,6 @@ class Layout extends Component {
                 <ul style={{ listStyle: `none`, float: `right` }}>
                   <ListLink to="/about/">About me</ListLink>
                   <ListLink to="/resume">Resume</ListLink>
-                  {/* <ListLink to="/gallery">Gallery</ListLink> */}
                   <ListLink to="/clips">Clips</ListLink>
                   <ListLink to="/contact/">Contact</ListLink>
                 </ul>
