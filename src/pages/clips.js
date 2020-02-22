@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import BackgroundImage from "./img/alexis_017.jpg"
 
 export default () => (
-  <Layout location="/about" backgroundUrl={BackgroundImage}>
+  <Layout location="/about" backgroundUrl={BackgroundImage} backgroundColor={"rgb(106, 173, 190)"}>
     <div >
       <div style={{ width: `200px`}}>
         <h2>Lights... camera... action!</h2>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Responsive from "react-responsive";
 import { Link } from "gatsby";
 import HamburgerNav from "./Hamburger";
+import "./Layout.css";
 
 const Desktop = props => <Responsive {...props} minWidth={767} />;
 const Mobile = props => <Responsive {...props} maxWidth={766} />;
@@ -19,18 +20,10 @@ class Layout extends Component {
 
     return (
       <span>
-        <div
+        <div className="mainDiv"
           style={{
-                  minHeight: "100%",
-                  width: "100%",
-                  height: "100%",
-                  position: "fixed",
-                  top: "0",
-                  left: "0",
                   backgroundImage: `url(${this.props.backgroundUrl})`,
-                  backgroundPosition: "center top",
-                  backgroundSize: "cover",
-                  overflowY: "scroll",
+                  backgroundColor: `${this.props.backgroundColor}`,
                 }}
         >
           <div
