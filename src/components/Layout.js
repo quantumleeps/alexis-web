@@ -20,31 +20,18 @@ class Layout extends Component {
     return (
       <span>
         <div
-          style={
-            isHome
-              ? {
+          style={{
+                  minHeight: "100%",
                   width: "100%",
-                  position: "absolute",
-                  left: "0",
+                  height: "100%",
+                  position: "fixed",
                   top: "0",
-                  zIndex: "0",
-                  backgroundImage: `url(${this.props.backgroundUrl})`,
-                  minHeight: "100vh",
-                  backgroundSize: "cover",
-                  backgroundPosition: "50% 50%"
-                }
-              : {
-                  width: "100%",
-                  position: "absolute",
                   left: "0",
-                  top: "0",
-                  zIndex: "0",
                   backgroundImage: `url(${this.props.backgroundUrl})`,
-                  minHeight: "100vh",
+                  backgroundPosition: "center top",
                   backgroundSize: "cover",
-                  backgroundPosition: "50% 50%"
-                  }
-          }
+                  overflowY: "scroll",
+                }}
         >
           <div
             style={{ margin: `0 auto`, maxWidth: 850, padding: `1.25rem 1rem` }}
