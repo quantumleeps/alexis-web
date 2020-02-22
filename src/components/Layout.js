@@ -15,6 +15,7 @@ const ListLink = props => (
 class Layout extends Component {
   render() {
     const isHome = this.props.location === "/";
+    console.log(this.props.location)
 
     return (
       <span>
@@ -33,10 +34,16 @@ class Layout extends Component {
                   backgroundPosition: "50% 50%"
                 }
               : {
-                  backgroundColor: "rgb(139, 139, 139)",
+                  width: "100%",
+                  position: "absolute",
+                  left: "0",
+                  top: "0",
+                  zIndex: "0",
+                  backgroundImage: `url(${this.props.backgroundUrl})`,
                   minHeight: "100vh",
-                  minWidth: "100%"
-                }
+                  backgroundSize: "cover",
+                  backgroundPosition: "50% 50%"
+                  }
           }
         >
           <div

@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import BackgroundImage from "./img/alexis.jpg"
+import BackgroundImage from "./img/alexis_new.jpg"
 
 export default () => (
   <Layout location="/" backgroundUrl={BackgroundImage}>
