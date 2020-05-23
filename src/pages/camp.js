@@ -3,6 +3,11 @@ import BackgroundImage from "./img/tiling/012.png";
 import PayLogo from "./img/paypal.png";
 import Pic1 from "./img/camp1.jpg";
 import Pic2 from "./img/camp2.jpg";
+import Responsive from "react-responsive";
+
+const Desktop = (props) => <Responsive {...props} minWidth={767} />;
+const Mobile = (props) => <Responsive {...props} maxWidth={766} />;
+
 export default () => (
   // <Layout location="/about" backgroundUrl={BackgroundImage} backgroundColor={"rgb(238, 181, 48)"}>
   //   <div style={{ backgroundColor: `white`, padding: `20px`, opacity:  `0.65`, borderRadius: `6px`}} >
@@ -14,7 +19,7 @@ export default () => (
 
   //       {/* <span><a href="https://twitter.com/lexinthecity1?lang=en"><img style={{ width: '20px', height: '20px' }}src={Twitter} />@lexinthecity1</a></span>
   //       <span><a href="https://www.instagram.com/lexinthecity1/">@lexinthecity1</a></span> */}
-  //     </div>
+  //     </div> https://www.patterncooler.com/#a96b96c12Cd12Ce0f0g64hF3C73D8A73B9iDEj0k49lE5mE5
   //   </div>
 
   // </Layout>
@@ -24,29 +29,42 @@ export default () => (
       backgroundColor: `red`,
       height: `100vh`,
       backgroundSize: `500px`,
-      padding: `2em`,
+      paddingTop: `0.25em`,
+      padding: `0.25em`,
       overflow: `scroll`,
     }}
   >
+    <Desktop><br /></Desktop>
     <div
       style={{
         backgroundColor: `white`,
-        padding: `2em`,
+        padding: `1.25em`,
         opacity: `0.9`,
         borderRadius: `6px`,
         margin: `0 auto`,
         minWidth: `87%`,
-        maxWidth: 850,
+        maxWidth: 767,
         // padding: `1.25rem 1rem`,
       }}
     >
+
+      <Desktop>
+        
       <img
-        style={{ margin: `12px`, maxHeight: `400px`, float: `right` }}
-        src={Pic2}
-      />
+          style={{ margin: `12px`, maxHeight: `400px`, float: `right` }}
+          src={Pic2}
+        />
+      </Desktop>
+
       <h2>Stage Meets Screen</h2>
       <h2>A Virtual Camp for Young Performers!</h2>
       <br />
+      <Mobile>
+        <img
+          style={{ margin: `12px`, maxHeight: `200px`, float: `right` }}
+          src={Pic2}
+        />
+      </Mobile>
       <p>
         As performers, it is of the utmost importance to be flexible and when
         things don’t go as planned, to quickly adjust and go on with the show!
@@ -68,22 +86,22 @@ export default () => (
         Class sizes will be limited to 10 students so that each performer will
         get their chance to shine!
       </p>
-      <div style={{
-        backgroundColor: `#8A73B9`,
-        opacity: `0.9`,
-        borderRadius: `6px`,
-        padding: `15px`,
-        margin: `15px`,
-        marginBottom: `25px`,
-        fontWeight: `bold`,
-        fontFamily: `Gill Sans Extrabold, sans-serif`,
-        color: `white`,
-
-      }}>
-      “Two Weeks of in-depth coaching, mentorship, and fun to bring out the
-          best in your superstar!!”
+      <div
+        style={{
+          backgroundColor: `#8A73B9`,
+          opacity: `0.9`,
+          borderRadius: `6px`,
+          padding: `15px`,
+          margin: `15px`,
+          marginBottom: `25px`,
+          fontWeight: `bold`,
+          fontFamily: `Gill Sans Extrabold, sans-serif`,
+          color: `white`,
+        }}
+      >
+        “Two Weeks of in-depth coaching, mentorship, and fun to bring out the
+        best in your superstar!!”
       </div>
-
       <u>Future Stars:</u>
       <br />
       Going into 1st - 5th Grade
