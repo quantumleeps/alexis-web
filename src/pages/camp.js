@@ -65,6 +65,7 @@ export default () => (
           src={Pic2}
         />
       </Mobile>
+      
       <p>
         As performers, it is of the utmost importance to be flexible and when
         things don’t go as planned, to quickly adjust and go on with the show!
@@ -99,9 +100,16 @@ export default () => (
           color: `white`,
         }}
       >
-        “Two Weeks of in-depth coaching, mentorship, and fun to bring out the
-        best in your superstar!!”
+        Two Weeks of in-depth coaching, mentorship, and fun to bring out the
+        best in your superstar!!
       </div>
+      <iframe style={{
+        margin: `0 auto`,
+        display: `block`,
+        maxWidth: `100%`
+      }} src="https://player.vimeo.com/video/422037211" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+
       <u>Future Stars:</u>
       <br />
       Going into 1st - 5th Grade
@@ -250,7 +258,6 @@ export default () => (
         </li>
         <li>Water</li>
       </ul>
-      <img style={{ maxWidth: `400px` }} src={Pic1} />
     </div>
   </div>
 );
