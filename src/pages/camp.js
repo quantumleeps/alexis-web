@@ -107,7 +107,7 @@ export default () => (
         margin: `0 auto`,
         display: `block`,
         maxWidth: `100%`
-      }} src="https://player.vimeo.com/video/422037211" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      }} src="https://player.vimeo.com/video/426590141" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 
       <u>Future Stars:</u>
@@ -146,9 +146,7 @@ export default () => (
         through their solo to help them connect with the material and create
         their own unique performance!
       </p>
-      <b>Pricing:</b> $325
-      <br />
-      <b>Early Registration (by June 5, 2020):</b> $275
+      <b>Pricing:</b> $325*
       <br />
       <p>
         Class sizes will be limited to 10 students, so register now to reserve
@@ -191,7 +189,7 @@ export default () => (
       <br />
       <br />
       <p>
-        If for any reason your child would like to participate but admission is
+        *If for any reason your child would like to participate but admission is
         cost prohibitive please{" "}
         <a
           style={{
