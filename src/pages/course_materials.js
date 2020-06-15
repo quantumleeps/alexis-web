@@ -119,7 +119,7 @@ export default () => (
           color: `black`,
         }}
       >
-        <h4>Dance Warmup to "Waving Through a Window" - Floor Stretches:¢</h4>
+        <h4>Dance Warmup to "Waving Through a Window" - Floor Stretches:</h4>
         <iframe
           style={{
             // margin: `0 auto`,
