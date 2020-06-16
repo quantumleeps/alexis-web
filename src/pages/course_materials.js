@@ -55,7 +55,7 @@ export default () => (
       </div>
       <span style={{ marginLeft: "10px" }}>Click/tap on the image to enlarge it!</span>
       <a
-        href="./static/frame-37663d3ce9f068eb45c341aea4ba736e.jpg"
+        href="/static/frame-37663d3ce9f068eb45c341aea4ba736e.jpg"
         target="_blank"
         rel="noopener noreferrer"
       >
