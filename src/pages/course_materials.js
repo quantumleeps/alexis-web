@@ -1,6 +1,7 @@
 import React from "react";
 import BackgroundImage from "./img/tiling/012.png";
-import PayLogo from "./img/paypal.png";
+import PDF01 from "./img/if_thats_what_it_is.pdf";
+import PDF02 from "./img/theres_no_business.pdf";
 import Frame from "./img/frame.jpg";
 import Responsive from "react-responsive";
 
@@ -38,6 +39,89 @@ export default () => (
         here. I'm so excited to begin this camp and begin working with all of
         you!
       </p>
+
+      <div
+        style={{
+          backgroundColor: `#8A73B9`,
+          opacity: `0.9`,
+          borderRadius: `6px`,
+          padding: `15px`,
+          margin: `15px`,
+          marginBottom: `25px`,
+          fontWeight: `bold`,
+          fontFamily: `Gill Sans Extrabold, sans-serif`,
+          color: `white`,
+        }}
+      >
+        June 17th:
+      </div>
+
+      <a
+        style={{
+          textDecoration: "underline",
+          marginLeft: "12px",
+          color: "black",
+        }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={PDF02}
+      >
+        Theres's No Business Like Show Business - Lyrics
+      </a>
+      <br />
+      <a
+        style={{
+          textDecoration: "underline",
+          marginLeft: "12px",
+          color: "black",
+        }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.youtube.com/watch?v=NoeuqSRDiJk"
+      >
+        Theres's No Business Like Show Business - Karaoke with lyrics
+      </a>
+      <br />
+      <a
+        style={{
+          textDecoration: "underline",
+          marginLeft: "12px",
+          color: "black",
+        }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.youtube.com/watch?v=4LwBD5xsf00"
+      >
+        Theres's No Business Like Show Business - Original Broadway Cast
+        Recording (lyrics will be different)
+      </a>
+      <br />
+      <br />
+      <a
+        style={{
+          textDecoration: "underline",
+          marginLeft: "12px",
+          color: "black",
+        }}
+        href={PDF01}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        If That's What It Is - Lyrics
+      </a>
+      <br />
+      <a
+        style={{
+          textDecoration: "underline",
+          marginLeft: "12px",
+          color: "black",
+        }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.youtube.com/watch?v=9JFR_jVQlfU"
+      >
+        If That's What It Is - Future Legend Trio
+      </a>
       <div
         style={{
           backgroundColor: `#8A73B9`,
@@ -53,7 +137,9 @@ export default () => (
       >
         June 15th: Find your frame!
       </div>
-      <span style={{ marginLeft: "10px" }}>Click/tap on the image to enlarge it!</span>
+      <div style={{ marginLeft: "10px" }}>
+        Click/tap on the image to enlarge it!
+      </div>
       <a
         href="../static/frame-37663d3ce9f068eb45c341aea4ba736e.jpg"
         target="_blank"
