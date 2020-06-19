@@ -39,7 +39,40 @@ export default () => (
         here. I'm so excited to begin this camp and begin working with all of
         you!
       </p>
-
+      <div
+        style={{
+          backgroundColor: `#8A73B9`,
+          opacity: `0.9`,
+          borderRadius: `6px`,
+          padding: `15px`,
+          margin: `15px`,
+          marginBottom: `25px`,
+          fontWeight: `bold`,
+          fontFamily: `Gill Sans Extrabold, sans-serif`,
+          color: `white`,
+        }}
+      >
+        June 19th: There's No Business Like Show Business - Choreography
+      </div><div
+        style={{
+          padding: `15px`,
+          margin: `15px`,
+        }}
+      >
+        <iframe
+          style={{
+            // margin: `0 auto`,
+            display: `block`,
+            maxWidth: `100%`,
+          }}
+          src="https://player.vimeo.com/video/430860714"
+          width="640"
+          height="360"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        />
+      </div>
       <div
         style={{
           backgroundColor: `#8A73B9`,
