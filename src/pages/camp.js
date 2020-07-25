@@ -104,7 +104,7 @@ export default () => (
       <u>STARS:</u>
       <br />
       Going into 3rd - 8th Grade
-      <p>Meets: August 3rd, 4th, 5th, 6th and 7th</p>
+      <p>Meets: August 3rd, 4th, 5th, 6th and 7th @ 12:30 - 3pm</p>
       <p>
         In this jampacked and dynamic 2.5 hour session, we will
         learn the basics of song and dance while collaborating on a group
